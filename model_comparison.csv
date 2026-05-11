@@ -1,0 +1,5 @@
+Method,Type,Purpose,Main Result
+KNN,Supervised,Predict AQI category,Accuracy = 74.35%
+Naive Bayes,Supervised,Predict AQI category,Accuracy = 75.63%
+K-Means,Unsupervised,Group similar pollution records,Number of clusters = 3
+PCA,Dimensionality Reduction,Visualize data in 2D,Variance explained = 87.11%
