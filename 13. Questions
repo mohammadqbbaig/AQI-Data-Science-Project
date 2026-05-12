@@ -1,0 +1,63 @@
+ 13. Questions Students Must Answer
+58. What is AQI?
+The Air Quality Index (AQI) is a standardized numerical scale used to measure and communicate air pollution levels. It ranges from 0 to 500, where lower values indicate cleaner air and higher values indicate more hazardous air conditions. AQI categories (such as Good, Moderate, Unhealthy, and Hazardous) help people understand potential health risks associated with air pollution.
+
+59. Why is AQI important?
+AQI is important because it directly relates to public health. It helps governments, policymakers, and individuals understand air pollution severity and take preventive measures. High AQI levels can cause respiratory issues, cardiovascular problems, and other health risks, especially for sensitive groups such as children and elderly people. Therefore, AQI serves as a critical indicator for environmental monitoring and urban planning.
+
+60. Which city or country has the highest AQI in the dataset?
+Based on the analysis, Lahore, Pakistan recorded the highest AQI value in the dataset. It also showed one of the highest average AQI levels among all cities included in the study.
+
+61. Which pollutant seems most related to AQI?
+From both the scatter plot and correlation heatmap, PM2.5 appears to be the pollutant most strongly related to AQI. It shows a very high positive correlation (approximately 0.90) with AQI. This indicates that increases in PM2.5 concentration significantly raise the overall air pollution level.
+
+ 62. What cleaning steps were required?
+The following cleaning steps were performed:
+
+Removed 50 duplicate records.
+Identified and handled 423 missing values.
+Dropped rows with missing critical values (AQI, PM2.5, PM10).
+Filled remaining missing values (NO2 and Temperature) using median values.
+Converted the Date column to datetime format.
+Created Year and Month columns.
+Converted all pollutant columns to numeric format.
+Removed negative pollutant values.
+After cleaning, the dataset was reduced from 14,184 to 13,993 records with no remaining missing values.
+
+63. What patterns did you observe from the charts?
+Several important patterns were observed:
+
+Most records fall under the Moderate and Unhealthy for Sensitive Groups categories.
+South Asian countries (India, Pakistan, Bangladesh) show the highest average AQI levels.
+The AQI trend fluctuates across years, indicating varying environmental conditions.
+PM2.5 shows a strong positive relationship with AQI.
+PM2.5 and PM10 have the strongest correlations with AQI in the heatmap.
+These patterns suggest that particulate matter plays a dominant role in global air pollution.
+
+64. Which algorithm performed better: KNN or Naive Bayes?
+Naive Bayes performed better.
+
+Best KNN accuracy (k=7): 74.35%
+Naive Bayes accuracy: 75.63%
+Naive Bayes outperformed KNN by 1.29%. This suggests that probabilistic classification was slightly more effective for this dataset.
+
+65. What did the K-Means clusters show?
+K-Means clustering (k=3) divided the data into three distinct pollution groups:
+
+Low pollution cluster
+Medium pollution cluster
+High pollution cluster
+The clusters showed clear differences in average AQI and PM2.5 levels. This confirms that the dataset naturally separates into meaningful pollution categories.
+
+66. What did PCA help you understand?
+PCA (Principal Component Analysis) helped reduce the high-dimensional pollutant data into two principal components. This allowed visualization of pollution clusters in a 2D space. PCA helped confirm that pollution groups are separable and that most variation in air quality is driven by a few dominant pollutant features.
+
+67. What are the limitations of your analysis?
+There are several limitations:
+
+The dataset is simulated rather than real-world collected data.
+Only basic machine learning models (KNN and Naive Bayes) were used.
+Hyperparameter tuning was minimal.
+Weather variables were not deeply analyzed.
+No advanced models (e.g., Random Forest, XGBoost, Neural Networks) were applied.
+Despite these limitations, the analysis provides meaningful insights into global air quality patterns.
