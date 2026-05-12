@@ -56,24 +56,24 @@ Perform unsupervised learning (K-Means and PCA)
 Save result files (CSV and PNG) in the repository
 The notebook runs successfully without errors when executed using Restart & Run All in Google Colab or Jupyter Notebook.
 
-✅ 55. Summary of Main Findings (Correct & Humanized)
+ 55. Summary of Main Findings (Correct & Humanized)
 Based on the analysis of 13,993 cleaned records, the following conclusions were drawn:
 
-✅ The global average AQI is 120.88, which falls under the category Unhealthy for Sensitive Groups.
-✅ Lahore, Pakistan recorded the highest AQI in the dataset.
-✅ Cape Town, South Africa recorded the lowest AQI.
-✅ PM2.5 is the strongest predictor of AQI, showing a very high correlation (≈ 0.90).
-✅ KNN achieved a best accuracy of 74.35% with k = 7.
-✅ Naive Bayes achieved a higher accuracy of 75.63%.
-✅ Naive Bayes outperformed KNN by 1.29%.
-✅ K-Means clustering successfully identified three pollution groups:
+ The global average AQI is 120.88, which falls under the category Unhealthy for Sensitive Groups.
+Lahore, Pakistan recorded the highest AQI in the dataset.
+Cape Town, South Africa recorded the lowest AQI.
+PM2.5 is the strongest predictor of AQI, showing a very high correlation (≈ 0.90).
+ KNN achieved a best accuracy of 74.35% with k = 7.
+Naive Bayes achieved a higher accuracy of 75.63%.
+Naive Bayes outperformed KNN by 1.29%.
+K-Means clustering successfully identified three pollution groups:
 Low pollution
 Medium pollution
 High pollution
-✅ PCA reduced dimensionality and helped clearly visualize pollution clusters in two dimensions.
+PCA reduced dimensionality and helped clearly visualize pollution clusters in two dimensions.
 Overall, both supervised and unsupervised learning techniques were effective in analyzing and interpreting global air quality patterns.
 
-✅ 56. Screenshots of Important Charts
+56. Screenshots of Important Charts
 All visualizations are saved directly in the repository.
 
 Key visualizations include:
